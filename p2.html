@@ -1,0 +1,20 @@
+<!-- JSON object name, age and DOB. Onclick print DOB -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="date()">
+    </button>
+    <script>
+        var store = {"name":"Krina","age":20,"dob":"20040715"};
+        function date(){ 
+            document.write(store.dob)
+        }
+    </script>
+</body>
+</html>

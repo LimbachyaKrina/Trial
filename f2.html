@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     const user = {
+        "name" : ["ABC","DEF","GHI"],
+        "age" : "27",
+        "course" : ["FSD-21","DE","FSD-1"],
+        "address": ["t1","t2",{"t3":"given again"}]
+    }
+    console.log(user.address[2].t3)
+   </script>
+</body>
+</html>
+
+<!-- JSon.parse() method -->
+<!-- -- takes JSON string and convert into js object -->
+<!-- NOTE : input is always string -->
+<!-- JSON.stringify() method -->
+<!-- --takes js object/value and convert into string -->

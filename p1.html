@@ -1,0 +1,29 @@
+<!-- 
+    Write a js and html program to store an array of object having height and name. Display name by sorting an array according to height.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+       var values = [{"name":"Ansh","height":125},{"name":"Om","height":854},{"name":"Kanisha","height":22},{"name":"Romit","height":634}]
+       for(i = 0; i < 4; i ++){
+         console.log(i)
+        for(j = i+1; j < 4; j ++){
+            if(values[i].height > values[j].height){
+                var store = values[j]
+                values[j] = values[i]
+                values[i] = store
+            }
+        }
+       }
+       console.log(values)
+    </script>
+ </body>
+ </html>
+
+ 

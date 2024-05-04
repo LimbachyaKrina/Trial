@@ -1,0 +1,83 @@
+<!-- Node.js is open source server environment. It is free
+runs on various platforms
+uses to run js on server
+extremely fast
+asynchronous (multiple tasks can work parallel)and non-blocking (a particular transaction cannot block the program)
+not a library, framework or programming language
+it is a runtime environment
+built on google chrome's V8 javascript engine  -->
+
+<!-- REPL : read, eval, print, loop -->
+<!-- node.js will work on REPL mode in cmd -->
+<!-- node : this will indicate that my REPL mode is started 
+> this means it is in read mode -->
+<!-- #Use variable:
+var x = 10; if i write var then it will store the value
+x = 10  this will direct print the value
+x
+console.log(x) -->
+
+<!-- #Multiline Expression -->
+<!-- var x = 0;
+do{
+    x++
+    console.log(x)
+} 
+while(x < 10)
+-->
+
+<!-- #Use of underscore -->
+<!-- _ is use to get last result -->
+
+<!-- editor mode -->
+<!-- .editor (to exit cntrl + D) -->
+
+<!-- repl.repl.ignoreUndefined = True;
+as repl needs to return something evertime, so if it does not have anything to return it will give undefined -->
+
+<!-- node.js callback -->
+<!-- is a special type of function passed as an argument to another function
+it is callled automatically when function that contains callback as an argument complets its execution 
+= there won't be name of callback function as we are not calling that function it is automatically callbacked 
+SYNTAX : function functionname (argument, callback[here it is name of function])
+EG : function fun_name(argument, function(err,res){
+    if(err)
+    console.log(err)
+    else
+    console.log(res)
+})-->
+<!-- setTimeout(
+    function(){
+        console.log("callback is function");
+    },1000);
+setInterval(()=> {
+    console.log("Callback is function")
+},1000)-->
+
+== Core Modules
+- file, http, os, path, url
+- var name = require('module name')
+- var fs = require('fs')
+
+== File module
+- file operations : read, update, create, delete, rename
+- synchronous and asynchronous
+# FUNCTIONS : 
+(fs = file module)
+- read : fs.readFileSync(filename, "utf-8")
+// utf-8 : for unicode encoding
+- create : fs.writeFileSync(filename, data)
+- update : fs.appendFileSync(filename, data)
+- delete : fs.unlinkSync(filename)
+- rename : fs.renameSync("oldfilename", "newfilename")
+- create directory : fs.mkdirSync("foldername")
+- remove directory : fs.rmdirSync("foldername")
+
+
+// Asynchronous mode
+=> It will work in random way
+- Read file : fs.readFile("filename","utf-8",callback)
+- create file : fs.writeFile("filename","data",callback)
+- update file : fs.appendFile("filename","data",callback)
+- delete file : fs.unlink("filename",callback)
+- rename file : fs.rename("oldfilename","newfilename", callback)
